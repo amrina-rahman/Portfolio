@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                 <img src="assets/profile.jpg" alt="Amrina Rahman">
+                 <img src="assets/profile.jpg" alt="Portrait of Amrina Rahman" width="400" height="500">
              </div>
         </section>
 
@@ -74,33 +74,38 @@
 
                 <div class="skill-card">
                     <h3>Languages & Technologies</h3>
-                    <p>C</p>
-                    <p>Java</p>
-                    <p>SQL</p>
-                    <p>HTML</p>
-                    <p>CSS</p> 
-                    <p>JavaScript</p>
-                    <p>bash</p>
-                    <p>JSON</p>
-
+                     <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bash</li>
+                        <li>JSON</li>
+                    </ul>
                 </div>
 
                 <div class="skill-card">
                     <h3>Tools & Frameworks</h3>
-                    <p>Git</p>
-                    <p>GitHub</p>
-                    <p>MySQL</p>
-                    <p>VS Code</p>
-                    <p>VirtualBox</p>
-                    <p>Ubuntu</p>
-                    <P>Electron.js</P>
+                     <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>VirtualBox</li>
+                        <li>Ubuntu</li>
+                        <li>Electron.js</li>
+                    </ul>
                 </div>
 
                 <div class="skill-card">
                     <h3>Currently Learning</h3>
-                    <p>Linux & System Programming</p>
-                    <p>Full-Stack Development</p>
-                    <p>AI & Machine Learning</p>
+                    <ul>
+                        <li>Linux & System Programming</li>
+                        <li>Full-Stack Development</li>
+                        <li>AI & Machine Learning</li   >
+                    </ul>
                 </div>
 
             </div>
@@ -113,14 +118,15 @@
     <div class="projects-container">
 
         <!-- Jacchi Kothay -->
-        <div class="project-card">
+        <article class="project-card">
             <h3>Jacchi Kothay</h3>
             <p>
                 A platform designed to help users discover nearby offers,
                 discounts, food, activities and shopping opportunities.
             </p>
             <span>HTML · CSS · JavaScript</span>
-        </div>
+             <a href="https://github.com/aljubairbadhon/JacchiKothay" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
 
         <!-- RecycleHub -->
         <div class="project-card">
@@ -133,24 +139,26 @@
         </div>
 
         <!-- Medical Store Management System -->
-        <div class="project-card">
+        <article class="project-card">
             <h3>Medical Store Management System</h3>
             <p>
                 A C-based management system developed using data structures
                 and file handling to manage medicines, sales and records.
             </p>
             <span>C · Data Structures · File Handling</span>
-        </div>
+            <a href="https://github.com/amrina-rahman/Medical-Store-Management-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
 
         <!-- Lucky Draw -->
-        <div class="project-card">
+        <article class="project-card">
             <h3>Lucky Draw Winner Selector</h3>
             <p>
                 A C-based program that randomly selects winners from a list
                 of participants for giveaways, raffles and similar events.
             </p>
             <span>C · Structures · Randomization</span>
-        </div>
+            <a href="https://github.com/amrina-rahman/Lucky-draw-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
 
     </div>
 </section>
@@ -185,9 +193,36 @@
                 on meaningful projects.
             </p>
 
-            <a href="mailto:amrina.rahman04@gmail.com">
-                Email Me
-            </a>
+            <form
+                id="contact-form"
+                action="https://formsubmit.co/ajax/amrina.rahman04@gmail.com"
+                method="POST"
+            >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <!-- JavaScript will display the submission result here -->
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+
+            <p>
+                <a href="mailto:amrina.rahman04@gmail.com">Email Me Directly</a><br>
+                <a href="https://github.com/amrina-rahman" target="_blank" rel="noopener noreferrer">View My GitHub</a>
+            </p>
         </section>
 
     </main>
